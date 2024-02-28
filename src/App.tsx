@@ -7,7 +7,7 @@ type Message = {
 }
 
 async function postQuestionAPI(question: string) {
-  const response = await fetch(`${process.env.VITE_API_URL}/askQuestion`, {
+  const response = await fetch(`${import.meta.env.VITE_API_URL}/askQuestion`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
