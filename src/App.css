@@ -1,0 +1,67 @@
+.chat-container {
+  width: 600px;
+  margin: 0 auto;
+  background: #333; /* Dark background for the container */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for contrast */
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.message-list {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  max-width: 70%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 20px;
+  color: #f1f1f1; /* Light text color for readability */
+}
+
+.message.ai {
+  background: #0056b3; /* Slightly darker shade for the AI messages */
+  align-self: flex-start;
+}
+
+.message.user {
+  background: #2c662d; /* Slightly darker shade for the user messages */
+  align-self: flex-end;
+}
+
+.input-area {
+  border-top: 1px solid #555; /* Darker border for input area */
+  padding: 10px;
+  display: flex;
+}
+
+.input-area form {
+  display: flex;
+  flex-grow: 1;
+}
+
+.input-area input {
+  flex-grow: 1;
+  border: 1px solid #555; /* Darker border for input */
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  background: #222; /* Dark background for input */
+  color: #f1f1f1; /* Light text color for input */
+}
+
+.input-area button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #0056b3; /* Matching AI message background */
+  color: white;
+  cursor: pointer;
+}
