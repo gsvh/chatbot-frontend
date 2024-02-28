@@ -44,7 +44,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="container">
       <h1>Tannie Magdel</h1>
       <div className="chat-container">
         <div className="message-list">

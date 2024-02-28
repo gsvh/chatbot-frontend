@@ -1,5 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .chat-container {
-  width: 600px;
+  width: 800px;
+  max-width: 90vw;
   margin: 0 auto;
   background: #333; /* Dark background for the container */
   border-radius: 5px;
